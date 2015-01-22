@@ -61,6 +61,6 @@ void main()
     else
     {
         headers();
-        printf("User not into existing\n");
+        printf("User existing\n");
     }
 }

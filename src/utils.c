@@ -29,7 +29,7 @@ char * query_value(char * key)
     offset = strstr(query_string(), key);
     if (offset == NULL)
         return NULL;
-    
+
     return offset + strlen(key) + 1;
 }
 
@@ -39,7 +39,7 @@ char * post_value(char * str, char * key)
     offset = strstr(str, key);
     if (offset == NULL)
         return NULL;
-    
+
     return offset + strlen(key) + 1;
 }
 
@@ -72,7 +72,7 @@ void stringify_hex(char * hexstr, char * str)
     int i = 0;
     char tmpbuffer1[128] = "";
     char tmpbuffer2[4] = "";
-    
+
     tmpbuffer2[2] = 0;
     for(i = 0; i < (strlen(hexstr)/2); i++)
     {
