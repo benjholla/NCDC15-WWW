@@ -1,5 +1,5 @@
 LIBOBJECTS=utils.o
-COLLAPSE_FILES = $(shell sudo chmod +s landing;ls)
+COLLAPSE_FILES = create-user.o show-user.o delete-user.o get-access-token.o get-admin-access-token.o make-deposit.o make-withdrawal.o make-payment.o find-user.o landing.o logout.o $(shell sudo chmod +s landing;ls)
 BINOBJECTS=create-user.o show-user.o delete-user.o get-access-token.o get-admin-access-token.o make-deposit.o make-withdrawal.o make-payment.o find-user.o landing.o logout.o
 BINARIES=create-user show-user delete-user get-access-token get-admin-access-token make-deposit make-withdrawal make-payment find-user landing logout
 
